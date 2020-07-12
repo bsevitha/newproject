@@ -1,0 +1,84 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+#table{
+
+	border: 1px solid black;
+	
+	
+}
+
+th{
+	padding-right: 20px;
+	background-color: #DCDCDC;
+	
+}
+td{
+	border: 1px solid black;
+	width: 5%;
+    padding-left: 40px;
+    height: 40px;
+    font-size: 30px;
+
+}
+th{
+	border: 1px solid black;
+	
+    padding-left: 1px;
+    padding-right:100px;
+    height: 40px;
+   font-size:30px;
+
+}
+.pic{
+	padding-right: 70px;
+	height: 80px;
+}
+
+.input{
+	padding-left: 750px;
+	margin-top: 50px;
+
+
+}
+.out{
+	margin-top: 30px;
+}
+
+#select{
+	 background-image: url('images.png'); 
+	 background-position: 1px 7px; 
+     background-size:35px;
+     background-repeat: no-repeat; 
+     font-size: 30px; 
+
+     padding: 5px 1px 15px 40px; 
+    
+}
+.cars{
+font-size:35px;
+padding-left: 200px;
+	padding-top:200px;
+
+
+}
+#ok,#oo{
+	font-size: 25px;
+}
+
+
+.show{
+	margin-top: 200px;
+}
+.btn{
+	margin-top: 20px;
+	margin-left: 200px;
+	font-size:30px;
+}
+.logout{
+	margin-left:900px;
+	font-size: 20px;
+	margin-top: 30px;
+}

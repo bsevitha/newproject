@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+<body>
+			
+<div class="show">
+  <label class="cars">Select the city:</label>
+  <select name="cars" id="ok" >
+  	
+  	<option ></option>
+    <option  >Mumbai</option>
+    <option >Delhi</option>
+    <option >Hyderabad</option>
+    <option  >Chennai</option>
+    <option >Kolkata</option>
+    <option >Pune</option>
+    <option >Jaipur</option>
+    <option>Nagpur</option>
+    <option>Lucknow</option>
+    <option>Surat</option><br><br>
+
+  </select><br><br>
+
+<label class="cars" >Select the vehicle:</label>
+  <select name="cars" id="oo" >
+  	<option></option>
+    <option>Bike</option>
+    <option>Car</option>
+    <option >Scooty</option>
+    <option>Cycle</option>
+
+    
+  </select>
+</div>
+<button class="btn"  onclick="myFunction()">Search</button>
+
+
+<script type="text/javascript">
+function myFunction(){
+var name = document.getElementById("ok").value;
+var vehicle = document.getElementById("oo").value;
+
+if( name == "Delhi" && vehicle == "Bike"){
+    location.replace("hi.html");
+  }
+  else if( name== "Delhi" && vehicle == "Car"){
+    location.replace("home.html");
+  }
+  else {
+  	location.replace("");
+  }
+  }
+</script>
+
+
+</body>
+
+</html>

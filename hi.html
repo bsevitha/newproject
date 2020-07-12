@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+  
+<body>
+  <div class="input">
+<input type="text" id="select" onkeyup="myFunction()" placeholder="Search for Vehicle_type">
+</div>
+<div class="out">
+<table  id="table">
+  <tr>
+    <th>Image</th>
+    <th>Bikename</th> 
+    <th>Rent/day</th>
+    <th>Deposit</th>
+    <th>Vehicle_type</th>
+    
+    
+  </tr>
+  <tr class="line">
+    <td><img  class="pic" src="activa.png" style="width:200px"></td>
+    <td>  Activa</td>
+    <td> 400</td>
+    <td>2000</td>
+    <td>Scooter</td>
+    </tr>
+  <tr>
+    <td><img  class="pic" src="fz.png" style="width:200px"></td>
+    <td>  FZ</td>
+    <td> 700</td>
+    <td>2000</td>
+    <td>Bike</td>
+    
+  </tr>
+
+</table>
+</div>
+<button class="logout" onclick="funct()">Logout</button>
+
+<script>
+
+function funct(){
+  location.replace("index.html")
+}
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("select");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[4];
+    if (td) {
+      txtValue = td.textContent;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+
+</html>
